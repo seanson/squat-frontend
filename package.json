@@ -1,0 +1,36 @@
+{
+  "name": "squat-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "history": "^4.7.2",
+    "prop-types": "^15.6.1",
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0",
+    "react-lazy-hero": "^0.4.0",
+    "react-router-dom": "^4.2.2",
+    "react-router-prop-types": "^1.0.2",
+    "react-scripts": "1.1.1",
+    "semantic-ui-css": "<2.3.0",
+    "semantic-ui-react": "^0.79.0"
+  },
+  "homepage": "https://squat.farm/",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "deploy": "react-scripts build && react-scripts gh-pages -d build"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-babel": "^5.0.0",
+    "eslint-plugin-import": "^2.10.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.7.0",
+    "prettier": "^1.11.1"
+  }
+}
