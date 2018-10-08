@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import ReactRouterPropTypes from 'react-router-prop-types';
+// import ReactRouterPropTypes from 'react-router-prop-types';
 
 import {
   Button,
@@ -16,7 +16,7 @@ import {
 
 export default class Login extends Component {
   static propTypes = {
-    history: ReactRouterPropTypes.history.isRequired
+    // history: ReactRouterPropTypes.history.isRequired
   }
   
   static contextTypes = {
@@ -24,8 +24,8 @@ export default class Login extends Component {
   };
  
   state = {
-    email: "",
-    password: "",
+    // email: "",
+    // password: "",
     error: "",
     loading: ""
   };

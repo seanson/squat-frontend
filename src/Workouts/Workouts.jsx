@@ -1,12 +1,5 @@
 import React, { Component } from "react";
-import {
-  Table,
-  Container,
-  Button,
-  Icon,
-  Modal,
-  Header
-} from "semantic-ui-react";
+import { Table, Container, Button, Icon, Modal, Header } from "semantic-ui-react";
 
 const starIcon = key => <Table.Cell key={`icon${key}`} icon="star" />;
 
@@ -45,7 +38,7 @@ const addWorkoutButton = (
 
 class Workouts extends Component {
   state = {
-    loading: false
+    // loading: false
   };
   render() {
     return (
@@ -53,10 +46,7 @@ class Workouts extends Component {
         <Modal trigger={addWorkoutButton}>
           <Header icon="archive" content="Archive Old Messages" />
           <Modal.Content>
-            <p>
-              Your inbox is getting full, would you like us to enable automatic
-              archiving of old messages?
-            </p>
+            <p>Your inbox is getting full, would you like us to enable automatic archiving of old messages?</p>
           </Modal.Content>
           <Modal.Actions>
             <Button basic color="red" inverted>
@@ -68,7 +58,7 @@ class Workouts extends Component {
           </Modal.Actions>
         </Modal>
 
-        {/* <Table
+        <Table
           inverted
           color="blue"
           headerRow={["Warmup"]}
@@ -102,7 +92,7 @@ class Workouts extends Component {
           headerRow={["Type", "Name", "Reps", "Weight", ""]}
           tableData={strengthData}
           renderBodyRow={renderStrengthRow}
-        /> */}
+        />
       </Container>
     );
   }
